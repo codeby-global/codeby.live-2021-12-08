@@ -1,6 +1,6 @@
-const getAppId = (): string => {
-  return process.env.VTEX_APP_ID ?? "";
-};
+// const getAppId = (): string => {
+//   return process.env.VTEX_APP_ID ?? "";
+// };
 
 export const queries = {
 };
