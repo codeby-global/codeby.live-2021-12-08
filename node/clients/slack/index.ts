@@ -6,9 +6,9 @@ export default class Slack extends ExternalClient {
     super('https://slack.com/api/', context, options)
   }
 
-  public async getStatus(status: number): Promise<string> {
-    return this.http.get(status.toString(), {
-      metric: 'status-get',
+  public async postMessage(message: string): Promise<string> {
+    return this.http.get("chat.postMessage", {
+      metric: 'messate-post',
     })
   }
 }
