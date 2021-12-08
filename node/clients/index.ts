@@ -2,7 +2,7 @@
    
 import { IOClients } from '@vtex/api'
 
-import Slack from './Slack'
+import Slack from './slack'
 
 // Extend the default IOClients implementation with our own custom clients.
 export class Clients extends IOClients {
