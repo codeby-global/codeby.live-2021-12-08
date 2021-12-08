@@ -2,5 +2,9 @@
   "name": "node",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@vtex/api": "6.45.6",
+    "@vtex/clients": "^2.17.0"
+  }
 }
