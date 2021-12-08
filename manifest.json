@@ -4,9 +4,7 @@
   "version": "0.1.1",
   "builders": {
     "docs": "0.x",
-    "messages": "1.x",
     "react": "3.x",
-    "node": "6.x",
     "store": "0.x",
     "styles": "2.x"
   },

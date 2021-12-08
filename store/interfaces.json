@@ -1,4 +1,11 @@
 {
+  "tones": {
+    "component": "*"
+  },
+  "tones.landing-page": {
+    "composition": "children",
+    "allowed": ["tones-button"]
+  },
   "tones-button": {
     "component": "TonesButton"
   }
