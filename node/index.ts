@@ -1,11 +1,12 @@
 import {
   RecorderState,
   Service,
-  ParamsContext
+  ParamsContext,
+  method
 } from '@vtex/api'
 
 import { Clients } from './clients'
-import { mutations, queries } from './resolvers'
+import { sendMessage } from './middlewares/sendMessage'
 
 declare var process: {
   env: {
@@ -14,14 +15,9 @@ declare var process: {
 }
 
 export default new Service<Clients, RecorderState, ParamsContext>({
-  graphql: {
-    resolvers: {
-      Mutation: {
-        ...mutations,
-      },
-      Query: {
-        ...queries,
-      },
-    },
-  },
+  routes: {
+    status: method({
+      POST: [sendMessage],
+    }),
+  }
 })

@@ -1,0 +1,7 @@
+{
+  "typeAcquisition": {
+    "enable": false
+  },
+  "include": ["./**/*.ts", "./typings/*.d.ts"],
+  "exclude": ["node_modules"]
+}
